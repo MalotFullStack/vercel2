@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial;
+          /* color: brown; */
+          background-color: brown;
+          font-weight: 900;
+        }
+        
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+        
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+        
+        /* Create four equal columns that sits next to each other */
+        .column {
+          flex: 25%;
+          padding: 0 4px;
+        }
+        
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+        }
+        
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media (max-width: 800px) {
+          .column {
+            flex: 50%;
+          }
+        }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+          .column {
+            flex: 100%;
+          }
+        }
+        </style>
+</head>
+<body>
+    <!-- Header -->
+<div class="header">
+    <h1>Responsive Image Gallery</h1>
+    <p>Resize the browser window to see the responsive effect.</p>
+  </div>
+  
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="./asset/yoav_0179.JPG" style="width:100%">
+      <img src="./asset/yoav_0182.JPG" style="width:100%">
+      <img src="./asset/yoav_0183.JPG" style="width:100%">
+      <img src="./asset/yoav_1386.JPG" style="width:100%">
+      <!-- <img src="./asset/yoav_0188.JPG" style="width:100%"> -->
+    </div>
+    
+    <div class="column">
+      <!-- <img src="./asset/yoav_0223.JPG" style="width:100%"> -->
+      <img src="./asset/yoav_0225.JPG" style="width:100%">
+      <img src="./asset/yoav_0256.JPG" style="width:100%">
+    </div> 
+     
+    <div class="column">
+      <img src="./asset/yoav_0260.JPG" style="width:100%">
+      <!-- <img src="./asset/yoav_0262.JPG" style="width:100%">  -->
+      <img src="./asset/yoav_0269.JPG" style="width:100%">
+      <img src="./asset/yoav_0259.JPG" style="width:100%">
+      
+    </div>
+    
+    <div class="column">
+      <img src="./asset/yoav_1199.JPG" style="width:100%">
+      <img src="./asset/yoav_1384.JPG" style="width:100%">
+      <img src="./asset/yoav_1385.JPG" style="width:100%">
+      <img src="./asset/yoav_1197.JPG" style="width:100%"> 
+    </div>
+  </div>
+  <a href="./website.html">website</a>
+</body>
+</html>
